@@ -11,21 +11,22 @@ All data come from web (webapi, json streams and so on).
 
 Sample sintax 1 - natural usage: 
 --------------------------------
-SomeRequestClass requestObj;
-SomeResponseClass responseObj;
-// Gets an object from a request
-responseObj = NRetrofit.Get<SomeRequestClass,SomeResponseClass>();
-// Puts an object into a request
-var result = NRetrofit.Post<SomeRequestClass>(requestObj);
-
-Sample Sintax 2 (by using extra Extended methods): 
---------------------------------
-Customer cus = new Customer();
-cus.Name = "test";
-cus.Save();
-cus.FromWeb(Id:100);
-
-Sample sintax 3 (by using natural Linq with a list response):
---------------------------------
-var list = from i in NRetrofit.Get<SomeRequestClass,SomeResponseClass>() where i.Name == 'John' select i;
+SomeRequestClass requestObj;</br>
+SomeResponseClass responseObj;</br>
+// Gets an object from a request</br>
+responseObj = NRetrofit.Get<SomeRequestClass,SomeResponseClass>();</br>
+// Puts an object into a request</br>
+var result = NRetrofit.Post<SomeRequestClass>(requestObj);</br>
+</br>
+Sample Sintax 2 (by using extra Extended methods): </br>
+--------------------------------------------------</br>
+Customer cus = new Customer();</br>
+cus.Name = "test";</br>
+cus.Save();</br>
+cus.FromWeb(Id:100);</br>
+</br>
+Sample sintax 3 (by using natural Linq with a list response):</br>
+------------------------------------------------------------------</br>
+var list = from i in NRetrofit.Get<SomeRequestClass,SomeResponseClass>() where i.Name == 'John' select i;</br>
+</br>
 
