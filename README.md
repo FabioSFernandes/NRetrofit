@@ -14,9 +14,9 @@ Sample sintax 1 - natural usage:
 SomeRequestClass requestObj;</br>
 SomeResponseClass responseObj;</br>
 // Gets an object from a request</br>
-responseObj = NRetrofit.Get<SomeRequestClass,SomeResponseClass>();</br>
+responseObj = NRetrofit.Get<<SomeRequestClass,SomeResponseClass>>();</br>
 // Puts an object into a request</br>
-var result = NRetrofit.Post<SomeRequestClass>(requestObj);</br>
+var result = NRetrofit.Post<<SomeRequestClass>>(requestObj);</br>
 </br>
 Sample Sintax 2 (by using extra Extended methods): </br>
 --------------------------------------------------</br>
@@ -27,6 +27,6 @@ cus.FromWeb(Id:100);</br>
 </br>
 Sample sintax 3 (by using natural Linq with a list response):</br>
 ------------------------------------------------------------------</br>
-var list = from i in NRetrofit.Get<SomeRequestClass,SomeResponseClass>() where i.Name == 'John' select i;</br>
+var list = from i in NRetrofit.Get<<SomeRequestClass,SomeResponseClass>>() where i.Name == 'John' select i;</br>
 </br>
 
