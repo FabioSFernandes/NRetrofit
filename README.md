@@ -14,7 +14,7 @@ Sample sintax 1 - natural usage:
 SomeRequestClass requestObj;</br>
 SomeResponseClass responseObj;</br>
 // Gets an object from a request</br>
-responseObj = NRetrofit.Get<<SomeRequestClass,SomeResponseClass>>();</br>
+responseObj = NRetrofit.Get<< SomeRequestClass, SomeResponseClass >>();</br>
 // Puts an object into a request</br>
 var result = NRetrofit.Post<<SomeRequestClass>>(requestObj);</br>
 </br>
